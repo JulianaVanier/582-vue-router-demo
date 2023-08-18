@@ -1,6 +1,6 @@
 <template>
-  <h1>Demo Post AFTER</h1>
-  <DemoPost></DemoPost>
+  <h1>Demo Post BEFORE</h1>
+  <DemoPostBefore></DemoPostBefore>
 
   <div class="student">
     <h1>Student</h1>
@@ -13,11 +13,10 @@
 </template>
 
 <script>
-import DemoPost from "@/components/DemoPost.vue";
-// import DemoPostBefore from "@/components/DemoPostBefore.vue";
+import DemoPostBefore from "@/components/DemoPostBefore.vue";
 
 export default {
-  name: "StudentView",
+  name: "StudentViewBefore",
   // props: {
   //   student: {
   //     type: Object,
@@ -52,8 +51,7 @@ export default {
     };
   },
   components: {
-    DemoPost,
-    // DemoPostBefore,
+    DemoPostBefore,
   },
 
   computed: {

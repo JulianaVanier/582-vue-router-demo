@@ -1,8 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/liststudents">List Students</router-link> |
+    <router-link to="/liststudents">List Students AFTER</router-link> |
     <router-link to="/student">Student</router-link> |
+    <router-link to="/liststudentsbefore">List Students BEFORE</router-link> |
   </nav>
   <button @click="this.$router.go(-1)">Return</button>
   <button @click="this.$router.go(1)">Foward</button>

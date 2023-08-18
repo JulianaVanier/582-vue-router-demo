@@ -3,6 +3,9 @@ import HomeView from "../views/HomeView.vue";
 import ListStudentView from "../views/ListStudentView.vue";
 import StudentView from "../views/StudentView.vue";
 import TestCompView from "../views/TestCompView.vue";
+import StudentViewBefore from "../views/StudentViewBefore.vue";
+import ListStudentViewBefore from "../views/ListStudentViewBefore.vue";
+import DemoPostBeforeView from "../views/DemoPostBeforeView.vue";
 
 const routes = [
   {
@@ -36,11 +39,39 @@ const routes = [
     name: "testcomp",
     component: TestCompView,
   },
+  {
+    path: "/studentIdbefore/:id",
+    name: "studentIdbefore",
+    component: StudentViewBefore,
+    props: true,
+  },
+  {
+    path: "/studentbefore",
+    name: "studentbefore",
+    component: StudentViewBefore,
+  },
+  {
+    path: "/liststudentsbefore",
+    name: "liststudentsbefore",
+    component: ListStudentViewBefore,
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    // component: () =>
+    //   import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+  },
+
   // {
   //   path: "*",
   //   name: "notfound",
   //   component: NotFoundView,
   // },
+  {
+    path: "/demopostbefore/:id",
+    name: "demopostbefore",
+    component: DemoPostBeforeView,
+    props: true,
+  },
 ];
 
 const router = createRouter({
