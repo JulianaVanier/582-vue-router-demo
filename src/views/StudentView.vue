@@ -1,4 +1,6 @@
 <template>
+  <h1>Demo Post</h1>
+  <DemoPost></DemoPost>
   <div class="student">
     <h1>Student</h1>
     <p>{{ findStudent.id }}</p>
@@ -10,6 +12,8 @@
 </template>
 
 <script>
+import DemoPost from "@/components/DemoPost.vue";
+
 export default {
   name: "StudentView",
   // props: {
@@ -45,6 +49,10 @@ export default {
       ],
     };
   },
+  components: {
+    DemoPost,
+  },
+
   computed: {
     findStudent() {
       for (let i = 0; i < this.student.length; i++) {
